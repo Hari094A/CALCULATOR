@@ -1,1 +1,53 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url('../calculator/p2.jpg!sw800');
+    background-size: cover;
+}
+.calc{
+    width: 30%;
+    height: 60%;
+    background-color: transparent;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#ans{
+    width: 90%;
+    margin-top: 20px;
+    font-family: 'Loto sans-serif', sans-serif;
+    font-size: 2.5rem;
+    outline: none;
+    margin-left: 20px;
+    text-align: right;
+}
+
+.btn input[type='button']
+{
+    width: 70px;
+    padding: 2px;
+    margin: 4px;
+    position: relative;
+    left: 23px;
+    top: 20px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.btn input[type='button']:hover
+{
+    background-color: black;
+    color: white;
+}
