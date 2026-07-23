@@ -1,22 +1,40 @@
+function Solve(value){
 
-function Solve(val)
-{
-    var v= document.getElementById('ans');
-    v.value += val;
+    document.getElementById("ans").value += value;
+
 }
-function Result()
-{
-    var v1 = document.getElementById('ans').value;
-    var v2= eval(v1);
-    document.getElementById('ans').value = v2;
+
+
+function Result(){
+
+    let x = document.getElementById("ans").value;
+
+    try{
+
+        document.getElementById("ans").value = eval(x);
+
+    }
+
+    catch{
+
+        document.getElementById("ans").value = "Error";
+
+    }
+
 }
+
 
 function Clear(){
-   var input = document.getElementById('ans');
-   input.value= ''; 
+
+    document.getElementById("ans").value = "";
+
 }
 
+
 function Back(){
-    var Back = document.getElementById('ans');
-    Back.value = Back.value.slice(0,-1);
+
+    let value = document.getElementById("ans").value;
+
+    document.getElementById("ans").value = value.slice(0,-1);
+
 }
